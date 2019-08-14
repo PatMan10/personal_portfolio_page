@@ -127,6 +127,10 @@ main {
   text-align: center;
 }
 
+.content-section {
+  min-height: 100vh;
+}
+
 .content-section h1 {
   border-top: 1px solid var(--h1_top_border_color);
   border-top: 1px solid rgba(var(--h1_top_border_color_rgba), 0.4);
@@ -169,20 +173,18 @@ main {
 }
 
 .project a {
+  border-radius: inherit;
+  color: #323232;
   text-decoration: none;
+}
+
+.project a:hover {
+  color: gold;
 }
 
 .project .name {
   color: white;
-}
-
-.code-tag {
-  color: #323232;
-  transition: 0.5s;
-}
-
-.code-tag:hover {
-  color: gold;
+  font-size: 1.2em;
 }
 
 .contact-section {

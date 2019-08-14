@@ -356,12 +356,13 @@
 
 .full-img {
   border-radius: inherit;
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 100%;
 }
 
 .image {
   align-items: center;
+  border-radius: inherit;
   display: flex;
   justify-content: center;
 }
@@ -622,6 +623,14 @@
 /*
  *colors: text
  * */
+
+.black-txt {
+  color: black;
+}
+
+.light-black-txt {
+  color: #323232;
+}
 
 .red-txt {
   color: red;
