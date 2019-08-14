@@ -115,8 +115,9 @@ header {
 main {
   background-color: var(--main_bg);
   color: var(--main_txt);
+  max-width: 100%;
   position: relative;
-  top: 40px;
+  top: 38px;
   transition: 0.5s;
   z-index: 1;
 }
@@ -190,4 +191,30 @@ main {
 .contact-section {
   background-color: var(--contact_section_bg);
   transition: 0.5s;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+}
+
+.company {
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.company:hover {
+  top: 10px;
+}
+
+a.company {
+  color: unset;
+  text-decoration: none;
+}
+
+.company .name {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5rem;
 }
