@@ -356,8 +356,8 @@
 
 .full-img {
   border-radius: inherit;
-  height: 95%;
-  width: 95%;
+  height: 98%;
+  width: 98%;
 }
 
 .image {
@@ -443,6 +443,60 @@
   --H: calc(var(--image_base_height) + var(--image_base_height) * 0.8);
   height: calc(var(--H) * 1.5);
   width: calc(var(--image_base_height) + var(--image_base_height) * 0.8);
+}
+
+.image-xl-square {
+  --addW: calc(var(--image_base_width) * 1.2);
+  --addH: calc(var(--image_base_height) * 1.2);
+  height: calc(var(--image_base_height) + var(--addH));
+  width: calc(var(--image_base_width) + var(--addW));
+}
+
+.image-xl-circle {
+  --addW: calc(var(--image_base_width) * 1.2);
+  --addH: calc(var(--image_base_height) * 1.2);
+  border-radius: 50%;
+  height: calc(var(--image_base_height) + var(--addH));
+  width: calc(var(--image_base_width) + var(--addW));
+}
+
+.image-xl-horizontal {
+  --W: calc(var(--image_base_width) + var(--image_base_width) * 1.2);
+  height: calc(var(--image_base_height) + var(--image_base_height) * 1.2);
+  width: calc(var(--W) * 1.5);
+}
+
+.image-xl-vertical {
+  --H: calc(var(--image_base_height) + var(--image_base_height) * 1.2);
+  height: calc(var(--H) * 1.5);
+  width: calc(var(--image_base_height) + var(--image_base_height) * 1.2);
+}
+
+.image-xxl-square {
+  --addW: calc(var(--image_base_width) * 1.6);
+  --addH: calc(var(--image_base_height) * 1.6);
+  height: calc(var(--image_base_height) + var(--addH));
+  width: calc(var(--image_base_width) + var(--addW));
+}
+
+.image-xxl-circle {
+  --addW: calc(var(--image_base_width) * 1.6);
+  --addH: calc(var(--image_base_height) * 1.6);
+  border-radius: 50%;
+  height: calc(var(--image_base_height) + var(--addH));
+  width: calc(var(--image_base_width) + var(--addW));
+}
+
+.image-xxl-horizontal {
+  --W: calc(var(--image_base_width) + var(--image_base_width) * 1.6);
+  height: calc(var(--image_base_height) + var(--image_base_height) * 1.6);
+  width: calc(var(--W) * 1.5);
+}
+
+.image-xxl-vertical {
+  --H: calc(var(--image_base_height) + var(--image_base_height) * 1.6);
+  height: calc(var(--H) * 1.5);
+  width: calc(var(--image_base_height) + var(--image_base_height) * 1.6);
 }
 
 /*
@@ -539,6 +593,10 @@
 
 .black-bg {
   background-color: black;
+}
+
+.light-black-bg {
+  background-color: #323232;
 }
 
 .white-bg {
